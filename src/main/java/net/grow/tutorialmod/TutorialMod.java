@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.grow.tutorialmod.block.ModBlocks;
 import net.grow.tutorialmod.item.ModItems;
+import net.grow.tutorialmod.item.ModItemsGroup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +15,9 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemsGroup.RegisterItemGroups();
+
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
