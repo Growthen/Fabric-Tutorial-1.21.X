@@ -28,6 +28,29 @@ public class ModBlocks {
             )
     );
 
+    public static final Block DARK_BLOCK_CORNER = registerBlock("dark_block_corner",
+            new RotatingBlock(AbstractBlock.Settings.create()
+                    .strength(4f)
+                    .requiresTool()
+            )
+    );
+
+    public static final Block DARK_BLOCK_LINE = registerBlock("dark_block_line",
+            new RotatingBlock(AbstractBlock.Settings.create()
+                    .strength(3f)
+                    .requiresTool()
+            )
+    );
+
+
+    public static final Block DARK_BLOCK_PURE = registerBlock("dark_block_pure",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f)
+                    .requiresTool()
+            )
+    );
+
+
 
 
     private static Block registerBlock(String name, Block block){

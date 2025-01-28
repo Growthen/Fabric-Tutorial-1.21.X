@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "tutorialmod:block/dark_block_line",
+    "bottom": "tutorialmod:block/dark_block_pure",
+    "side": "tutorialmod:block/dark_block_pure"
+  }
+}
+

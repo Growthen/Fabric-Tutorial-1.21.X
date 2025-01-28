@@ -4,6 +4,9 @@
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+  "block.tutorialmod.dark_block_corner": "Dark Block Corner",
+  "block.tutorialmod.dark_block_pure": "Dark Block Pure",
+  "block.tutorialmod.dark_block_line": "Dark Block Line",
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks"
