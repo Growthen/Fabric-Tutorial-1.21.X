@@ -2,6 +2,7 @@ package net.grow.tutorialmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.grow.tutorialmod.TutorialMod;
+import net.grow.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -43,6 +44,13 @@ public class ModBlocks {
                             .strength(4f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.DEEPSLATE)
+            )
+    );
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
             )
     );
 
