@@ -2,6 +2,7 @@ package net.grow.tutorialmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.grow.tutorialmod.TutorialMod;
+import net.grow.tutorialmod.item.custom.Chisellitem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -12,6 +13,8 @@ public class ModItems {
 
     public static final  Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
+
+    public static final Item CHISEL = registerItem("chisel", new Chisellitem(new Item.Settings().maxDamage(32)));
 
 
     private static Item registerItem(String name, Item item){
