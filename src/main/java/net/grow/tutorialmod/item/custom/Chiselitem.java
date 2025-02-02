@@ -3,19 +3,24 @@ package net.grow.tutorialmod.item.custom;
 import net.grow.tutorialmod.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 
+import java.util.List;
 import java.util.Map;
 
-public class Chisellitem extends Item {
+public class Chiselitem extends Item {
     private static final Map<Block,Block> CHISEL_MAP =
             Map.of(
                     Blocks.STONE,Blocks.STONE_BRICKS,
@@ -25,7 +30,7 @@ public class Chisellitem extends Item {
                     Blocks.DIAMOND_BLOCK,Blocks.IRON_BLOCK
             );
 
-    public Chisellitem(Settings settings) {
+    public Chiselitem(Settings settings) {
         super(settings);
     }
 
@@ -48,5 +53,17 @@ public class Chisellitem extends Item {
         }
 
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        if (Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.shift_down"));
+        }else {
+            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel"));
+        }
+
+
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }

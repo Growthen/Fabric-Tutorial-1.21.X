@@ -16,5 +16,11 @@
   "block.tutorialmod.magic_block": "Magic Block",
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks"
+  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This block is very, very §eMAGICAL§r",
+  "tooltip.tutorialmod.chisel.shift_down": "This item Chisels blocks in to Bricks!",
+  "tooltip.tutorialmod.chisel": "Press §l§eSHIFT for more info!",
+  "tooltip.tutorialmod.cauliflower.tooltip": "This is delicious!"
+
 }
