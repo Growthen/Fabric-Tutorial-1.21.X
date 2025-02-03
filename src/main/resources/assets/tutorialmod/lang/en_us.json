@@ -20,7 +20,7 @@
 
   "tooltip.tutorialmod.magic_block.tooltip": "This block is very, very §eMAGICAL§r",
   "tooltip.tutorialmod.chisel.shift_down": "This item Chisels blocks in to Bricks!",
-  "tooltip.tutorialmod.chisel": "Press §l§eSHIFT for more info!",
+  "tooltip.tutorialmod.chisel": "Press §l§eSHIFT§r for more info!",
   "tooltip.tutorialmod.cauliflower.tooltip": "This is delicious!"
 
 }
