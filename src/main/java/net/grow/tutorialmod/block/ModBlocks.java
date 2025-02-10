@@ -3,6 +3,9 @@ package net.grow.tutorialmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.grow.tutorialmod.TutorialMod;
 import net.grow.tutorialmod.block.custom.MagicBlock;
+import net.grow.tutorialmod.block.custom.PinkGarnetLampBlock;
+import net.grow.tutorialmod.block.custom.SpeedBlock;
+import net.grow.tutorialmod.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -51,6 +54,12 @@ public class ModBlocks {
                     .requiresTool()
             )
     );
+    public static final Block SPEED = registerBlock("speed",
+            new SpeedBlock(AbstractBlock.Settings.create()
+                    .strength(10f)
+                    .requiresTool()
+            )
+    );
 
     public static final Block DARK_BLOCK_CORNER = registerBlock("dark_block_corner",
             new RotatingBlock(AbstractBlock.Settings.create()
@@ -89,7 +98,7 @@ public class ModBlocks {
     );
 
     public static final Block PINK_GARNET_BUTTON = registerBlock("pink_garnet_button",
-            new ButtonBlock(BlockSetType.IRON, 2, AbstractBlock.Settings.create()
+            new ButtonBlock(BlockSetType.IRON, 20, AbstractBlock.Settings.create()
                     .strength(2f)
                     .requiresTool()
                     .noCollision()
@@ -137,6 +146,14 @@ public class ModBlocks {
                     .strength(2f)
                     .requiresTool()
                     .nonOpaque()
+            )
+    );
+
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
+            new PinkGarnetLampBlock(AbstractBlock.Settings.create()
+                    .strength(2f)
+                    .requiresTool()
+                    .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED)? 15:0)
             )
     );
 

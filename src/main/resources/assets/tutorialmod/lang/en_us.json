@@ -5,6 +5,14 @@
   "item.tutorialmod.cauliflower": "Cauli Flower",
   "item.tutorialmod.starlight_ashes": "Star Light Ashes",
 
+  "item.tutorialmod.pink_garnet_sword": "Pink Garnet Sword",
+  "item.tutorialmod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.tutorialmod.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.tutorialmod.pink_garnet_axe": "Pink Garnet Axe",
+  "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
+  "item.tutorialmod.kaupen_armor_trim_smithing_template": "Kaupen Smithing Template",
+
   "block.tutorialmod.pink_garnet_stairs": "Pink Garnet Stairs",
   "block.tutorialmod.pink_garnet_slab": "Pink Garnet Slab",
   "block.tutorialmod.pink_garnet_button": "Pink Garnet Button",
@@ -23,6 +31,9 @@
   "block.tutorialmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.tutorialmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
   "block.tutorialmod.magic_block": "Magic Block",
+  "block.tutorialmod.pink_garnet_lamp": "Pink Garnet Lamp",
+  "block.tutorialmod.speed": "Speed Block",
+
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
@@ -30,6 +41,9 @@
   "tooltip.tutorialmod.magic_block.tooltip": "This block is very, very §eMAGICAL§r",
   "tooltip.tutorialmod.chisel.shift_down": "This item Chisels blocks in to Bricks!",
   "tooltip.tutorialmod.chisel": "Press §l§eSHIFT§r for more info!",
-  "tooltip.tutorialmod.cauliflower.tooltip": "This is delicious!"
+  "tooltip.tutorialmod.cauliflower.tooltip": "This is delicious!",
+  "trim_material.tutorialmod.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Pattern"
+
 
 }

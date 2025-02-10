@@ -7,6 +7,7 @@
     "tutorialmod:dark_block_pure",
     "tutorialmod:dark_block_line",
     "tutorialmod:dark_block_corner",
-    "tutorialmod:magic_block"
+    "tutorialmod:magic_block",
+    "tutorialmod:speed"
   ]
 }

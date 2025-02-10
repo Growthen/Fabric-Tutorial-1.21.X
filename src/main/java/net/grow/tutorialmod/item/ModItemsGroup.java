@@ -3,6 +3,7 @@ package net.grow.tutorialmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.grow.tutorialmod.TutorialMod;
 import net.grow.tutorialmod.block.ModBlocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -24,6 +25,18 @@ public class ModItemsGroup {
                         entries.add(ModItems.STARLIGHT_ASHES);
 
                     }).build());
+
+    public static final ItemGroup PRUEBA_DE_CUSTOM_ITEMS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID,"prueba_de_custom_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.SPEED))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.prueba_de_custom_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.SPEED);
+
+
+
+                    }).build());
+
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID,"pink_garnet_blocks"),
@@ -49,6 +62,17 @@ public class ModItemsGroup {
                         entries.add(ModBlocks.PINK_GARNET_WALL);
                         entries.add(ModBlocks.PINK_GARNET_DOOR);
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+                        entries.add(ModBlocks.PINK_GARNET_LAMP);
+
+                        entries.add(ModItems.PINK_GARNET_SWORD);
+                        entries.add(ModItems.PINK_GARNET_PICKAXE);
+                        entries.add(ModItems.PINK_GARNET_SHOVEL);
+                        entries.add(ModItems.PINK_GARNET_AXE);
+                        entries.add(ModItems.PINK_GARNET_HOE);
+                        entries.add(ModItems.PINK_GARNET_HAMMER);
+
+                        entries.add(ModItems.KAUPEN_SMITHING_TEMPLATE);
 
                     }).build());
 
